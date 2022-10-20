@@ -21,9 +21,9 @@ const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const data3 = ["a", "b", "c", "d", "e", "f"];
 
-const takeUntil = function(array, callback){
+const takeUntil = function(array, callback) {
   const result = [];
-  for (let element of array){
+  for (let element of array) {
     if (!callback(element)) result.push(element);
     else return result;
   }
@@ -39,6 +39,6 @@ console.log(results2);
 const results3 = takeUntil(data3, x => x === 'e');
 console.log(results3);
 
-assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ])
-assertArraysEqual(results2,[ "I've", 'been', 'to', 'Hollywood' ])
-assertArraysEqual(results3,[ 'a', 'b', 'c', 'd' ])
+assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ]);
+assertArraysEqual(results2,[ "I've", 'been', 'to', 'Hollywood' ]);
+assertArraysEqual(results3,[ 'a', 'b', 'c', 'd' ]);
