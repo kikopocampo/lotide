@@ -43,4 +43,4 @@ else return false;
 // console.log(listKeys(cd));
 console.log(eqObjects(ab,ba));
 console.log(eqObjects(cd,dc));
-console.log(eqObjects(cd, cd2));
+console.log(eqObjects(cd,cd2));
