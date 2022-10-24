@@ -1,7 +1,11 @@
+// Asserts that two values are equal or not.
 const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`🥳Assertion Passed: ${actual} === ${expected}`)
-    : console.log(`🥲Assertion Failed: ${actual} !== ${expected}`);
+  if (actual === expected) {
+    console.log(`🥳Assertion Passed: ${actual} === ${expected}`)
+    return;
+  };
+ 
+  console.log(`🥲Assertion Failed: ${actual} !== ${expected}`);
 };
 
-assertEqual('Bootcamp', 'Bootcamp');
-assertEqual(2,1);
+module.exports = assertEqual
