@@ -20,7 +20,6 @@ const assertArraysEqual = function(arr1,arr2) {
   else console.log(`🙅🏻 Assertion Failed: ${arr1} !== ${arr2}`);
 };
 
-// const compressSentence = sentence => sentence.replace(/ /g,'');
 const splitSentence = sentence => sentence.split('');
 const letterPositions = function(sentence) {
   const results = {};
@@ -29,16 +28,15 @@ const letterPositions = function(sentence) {
   });
   return results;
 };
-let test1 = (letterPositions('lighthouse in the house'));
-console.log(test1);
-assertArraysEqual(test1.i,[1,11]);
-assertArraysEqual(test1.n,[12]);
-assertArraysEqual(test1.e,[9,16,22]);
-let test2 = (letterPositions('aabb ccdd'));
-console.log(test2);
-assertArraysEqual(test2.a,[0,1]);
-assertArraysEqual(test2.b,[2,3]);
-assertArraysEqual(test2.d,[7,8]);
-// console.log('light'[0])
-// console.log(splitSentence(compressSentence('lighthouse in the house')));
-// console.log(lenCheck('light'.split(),'light'.split()))
+// let test1 = (letterPositions('lighthouse in the house'));
+// console.log(test1);
+// assertArraysEqual(test1.i,[1,11]);
+// assertArraysEqual(test1.n,[12]);
+// assertArraysEqual(test1.e,[9,16,22]);
+// let test2 = (letterPositions('aabb ccdd'));
+// console.log(test2);
+// assertArraysEqual(test2.a,[0,1]);
+// assertArraysEqual(test2.b,[2,3]);
+// assertArraysEqual(test2.d,[7,8]);
+
+module.exports = letterPositions;

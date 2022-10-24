@@ -19,6 +19,7 @@ const assertArraysEqual = function(arr1,arr2) {
 // This function should take in a source array and a itemsToRemove array. 
 // It should return a new array with only those elements from source that 
 // are not present in the itemsToRemove array.
+
 const without = function(initArr,remArr){
   const results =[];
   
@@ -32,9 +33,11 @@ const without = function(initArr,remArr){
   return results;
 };
 
-const words = ["hello", "world", "lighthouse"];
-console.log(without([1,2,1,3,3,3,1,3,1,3,1] , [3,1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
-console.log(without(['apple','banana','melon','banana'],['kiwi','banana']));
-console.log(without(words, ["lighthouse"]));
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// const words = ["hello", "world", "lighthouse"];
+// console.log(without([1,2,1,3,3,3,1,3,1,3,1] , [3,1]));
+// console.log(without(["1", "2", "3"], [1, 2, "3"]));
+// console.log(without(['apple','banana','melon','banana'],['kiwi','banana']));
+// console.log(without(words, ["lighthouse"]));
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+module.exports = without;

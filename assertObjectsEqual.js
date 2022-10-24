@@ -36,12 +36,14 @@ const assertObjectsEqual = function(obj1,obj2) {
     console.log(`🫣 Assertion Failed: ${inspect(obj1)} !== ${inspect(obj2)}`);
 };
 
-const ab = { a: "1", b: "2" , c: "3"};
-const ba = { c: "3", a: "1" , b: "2"};
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(ab,ba));
-console.log(eqObjects(cd,dc));
-assertObjectsEqual(cd,dc);
-assertObjectsEqual(ba,dc);
-assertObjectsEqual(ba,ab);
+// const ab = { a: "1", b: "2" , c: "3"};
+// const ba = { c: "3", a: "1" , b: "2"};
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// console.log(eqObjects(ab,ba));
+// console.log(eqObjects(cd,dc));
+// assertObjectsEqual(cd,dc);
+// assertObjectsEqual(ba,dc);
+// assertObjectsEqual(ba,ab);
+
+module.exports = assertObjectsEqual;

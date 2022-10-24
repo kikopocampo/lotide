@@ -26,10 +26,12 @@ const findKeyByValue = function(object,value) {
 
 // console.log(listKeys(bestTVShowsByGenre));
 // console.log('sci_fi' === listKeys(bestTVShowsByGenre)[0]);
-console.log(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"));
-console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"));
-console.log(findKeyByValue(bestTVShowsByGenre, "Power Rangers"));
-console.log(findKeyByValue(bestTVShowsByGenre, "Schitt's Creek"));
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// console.log(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"));
+// console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"));
+// console.log(findKeyByValue(bestTVShowsByGenre, "Power Rangers"));
+// console.log(findKeyByValue(bestTVShowsByGenre, "Schitt's Creek"));
+// console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+module.exports = findKeyByValue;

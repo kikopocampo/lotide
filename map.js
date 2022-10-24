@@ -31,7 +31,9 @@ const getFirstLet = word => word[0];
 const capitalize = word => word.toUpperCase();
 
 
-console.log(map(words,capitalize));
-console.log(map(words,getFirstLet));
-assertArraysEqual(map(words,getFirstLet), ['g','c','t','m','t'])
-assertArraysEqual(map(words,capitalize), [ 'GROUND', 'CONTROL', 'TO', 'MAJOR', 'TOM' ])
+// console.log(map(words,capitalize));
+// console.log(map(words,getFirstLet));
+// assertArraysEqual(map(words,getFirstLet), ['g','c','t','m','t'])
+// assertArraysEqual(map(words,capitalize), [ 'GROUND', 'CONTROL', 'TO', 'MAJOR', 'TOM' ])
+
+module.exports = map;

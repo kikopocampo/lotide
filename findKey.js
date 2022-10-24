@@ -30,5 +30,7 @@ const test2 = (findKey({
   "Denise":     { age: 26 }
 }, x => x.age === 26));
 
-assertEqual(test1,'noma');
-assertEqual(test2,'Denise');
+// assertEqual(test1,'noma');
+// assertEqual(test2,'Denise');
+
+module.exports = findKey;
