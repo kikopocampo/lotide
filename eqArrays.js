@@ -5,10 +5,14 @@ const eqArrays = function(arr1,arr2) {
     if (Array.isArray(arr1[i])) {
       if (!eqArrays(arr1[i],arr2[i])) return false;
     }
-    
-    if (arr1[i] !== arr2[i]) return false;
+    if (!Array.isArray(arr1[i])){
+      if (arr1[i] !== arr2[i]) return false;
+    }
+   
   }
   return true;
 };
+
+console.log(eqArrays([1, 2, 3, [3,4]], [1, 2, 3, [3,4]]))
 
 module.exports = eqArrays;
