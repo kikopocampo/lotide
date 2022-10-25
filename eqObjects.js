@@ -30,22 +30,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-
-//TESTS:
-// const cd = { c: "2", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "2" };
-// const ab = { a: "1", b: "2" , c: "3"};
-// const ba = { c: "3", a: "1" , b: "2"};
-// const cd1 = { c: "1", d: ["2", 3, 4] , a: {a: 0, b: 0}};
-// const cd2 = { c: "1", a: {a: 0, b: 0}, d: ["2", 3, 4] };
-// const test1 = eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 });
-// const test2 = eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 });
-// const test3 = eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 });
-// console.log(eqObjects(ab,ba));
-// console.log(eqObjects(cd,dc));
-// console.log(eqObjects(cd1,cd2));
-// console.log(test1);
-// console.log(test2);
-// console.log(test3);
-
 module.exports = eqObjects;
